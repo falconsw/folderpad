@@ -9,12 +9,17 @@ enum Icons {
     }
 
     /// The group's Launchpad-style icon, as it is or will be set on the folder.
-    static func group(_ group: AppGroup) -> NSImage {
+    /// Cached per appearance so dark and light tiles do not clobber each other.
+    static func group(_ group: AppGroup, dark: Bool = FolderIcon.systemIsDark) -> NSImage {
         let targets = group.items.compactMap(\.target)
-        return cached("group:" + targets.map(\.path).joined(separator: "|")) { FolderIcon.image(for: targets) }
+        let key = "group:\(dark ? "d" : "l"):" + targets.map(\.path).joined(separator: "|")
+        return cached(key) { FolderIcon.image(for: targets, dark: dark) }
     }
 
     static let missingApp: NSImage = NSImage(systemSymbolName: "app.dashed", accessibilityDescription: nil) ?? NSImage()
+
+    /// Drops cached images, e.g. after a light/dark switch so group icons are redrawn.
+    static func clear() { cache.removeAllObjects() }
 
     private static func cached(_ key: String, make: () -> NSImage) -> NSImage {
         if let image = cache.object(forKey: key as NSString) { return image }

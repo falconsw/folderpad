@@ -56,12 +56,13 @@ struct Sidebar: View {
 
 private struct GroupRow: View {
     @Environment(Library.self) private var library
+    @Environment(\.colorScheme) private var colorScheme
     let group: AppGroup
     @State private var isTargeted = false
 
     var body: some View {
         HStack(spacing: 8) {
-            Image(nsImage: Icons.group(group))
+            Image(nsImage: Icons.group(group, dark: colorScheme == .dark))
                 .resizable()
                 .frame(width: 24, height: 24)
             Text(group.name)

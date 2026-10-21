@@ -115,6 +115,17 @@ struct GroupStoreTests {
         #expect(throws: GroupStore.Failure.self) { try store.createGroup(named: "games") }
     }
 
+    @Test func catalogFindsHiddenAppSymlinks() throws {
+        // Like /Applications/Safari.app: a symlink into a cryptex, flagged hidden.
+        let real = try makeApp("Browser", in: root.appendingPathComponent(".cryptex", isDirectory: true))
+        let link = root.appendingPathComponent("Browser.app")
+        try FileManager.default.createSymbolicLink(at: link, withDestinationURL: real)
+        #expect(link.withUnsafeFileSystemRepresentation { lchflags($0!, UInt32(UF_HIDDEN)) } == 0)
+
+        let apps = AppCatalog.scan(roots: [root])
+        #expect(apps.map(\.name) == ["Browser"])
+    }
+
     @Test func catalogFindsAppsButNotAliases() throws {
         let folder = try store.createGroup(named: "Group")
         let app = try makeApp("Finder Test")

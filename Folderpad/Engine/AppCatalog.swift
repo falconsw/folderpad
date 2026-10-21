@@ -16,11 +16,16 @@ nonisolated enum AppCatalog {
         var apps: [InstalledApp] = []
 
         for root in roots {
+            // Not .skipsHiddenFiles: /Applications/Safari.app is a symlink macOS flags as hidden.
             guard let enumerator = FileManager.default.enumerator(
-                at: root, includingPropertiesForKeys: keys, options: [.skipsHiddenFiles, .skipsPackageDescendants]
+                at: root, includingPropertiesForKeys: keys, options: [.skipsPackageDescendants]
             ) else { continue }
 
             while let url = enumerator.nextObject() as? URL {
+                if url.lastPathComponent.hasPrefix(".") {
+                    enumerator.skipDescendants()
+                    continue
+                }
                 // Apps sit at most a couple of folders deep (Utilities, vendor folders).
                 if enumerator.level >= 3 { enumerator.skipDescendants() }
                 guard url.pathExtension.lowercased() == "app" else { continue }

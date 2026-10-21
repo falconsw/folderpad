@@ -158,11 +158,12 @@ struct DockItemView: View {
 /// The icon the Dock would show: a group's Launchpad-style icon, else Finder's icon.
 struct DockItemIcon: View {
     @Environment(Library.self) private var library
+    @Environment(\.colorScheme) private var colorScheme
     let item: DockItem
 
     var body: some View {
         if let group = library.group(withID: item.id) {
-            Image(nsImage: Icons.group(group)).resizable()
+            Image(nsImage: Icons.group(group, dark: colorScheme == .dark)).resizable()
         } else if let url = item.url, url.isFileURL {
             Image(nsImage: Icons.app(url)).resizable()
         } else {

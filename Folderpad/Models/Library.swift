@@ -32,11 +32,13 @@ final class Library {
     private var store: GroupStore { GroupStore(root: location.url) }
     private var pendingDockRestart: Task<Void, Never>?
     private var lastScan: Date?
+    private var appearanceObservation: NSKeyValueObservation?
 
     private init() {
         location = .current
         reload()
         Task { await scanApps() }
+        observeAppearance()
     }
 
     // MARK: Reading
@@ -249,6 +251,29 @@ final class Library {
 
     private func refreshIcon(of folder: URL) {
         FolderIcon.apply(to: folder, apps: store.items(in: folder).compactMap(\.target))
+    }
+
+    // MARK: Appearance
+
+    /// Redraws the group folder icons when the system switches between light and dark.
+    private func observeAppearance() {
+        reconcileIconAppearance()
+        guard let app = NSApp else { return }
+        appearanceObservation = app.observe(\.effectiveAppearance) { [weak self] _, _ in
+            Task { @MainActor in self?.reconcileIconAppearance() }
+        }
+    }
+
+    /// Rebakes the group folder icons when the current appearance differs from the one they
+    /// were last baked in, so a dark-mode Mac shows dark tiles even on the first launch.
+    private func reconcileIconAppearance() {
+        let now = FolderIcon.systemIsDark ? "dark" : "light"
+        guard UserDefaults.standard.string(forKey: Pref.bakedIconAppearance) != now else { return }
+        Icons.clear()
+        for group in groups { refreshIcon(of: group.folder) }
+        UserDefaults.standard.set(now, forKey: Pref.bakedIconAppearance)
+        // A folder shows its baked icon only after the Dock restarts; a stack follows live.
+        if dockStyles.values.contains(where: { $0.display == .folder }) { scheduleDockRestart() }
     }
 
     private func restartDockNow() {

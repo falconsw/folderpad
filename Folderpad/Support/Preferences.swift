@@ -6,6 +6,8 @@ enum Pref {
     static let newGroupInDock = "newGroupInDock"
     static let newGroupDisplay = "newGroupDockDisplay"
     static let newGroupContent = "newGroupDockContent"
+    /// The appearance ("dark"/"light") the group folder icons were last baked in.
+    static let bakedIconAppearance = "bakedIconAppearance"
 
     /// How a group looks in the Dock when Folderpad adds it.
     static var newGroupStyle: DockStyle {

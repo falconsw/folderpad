@@ -2,6 +2,7 @@ import SwiftUI
 
 struct GroupDetailView: View {
     @Environment(Library.self) private var library
+    @Environment(\.colorScheme) private var colorScheme
     let group: AppGroup
     @State private var showingPicker = false
     @State private var isTargeted = false
@@ -63,7 +64,7 @@ struct GroupDetailView: View {
 
     private var header: some View {
         HStack(spacing: 18) {
-            Image(nsImage: Icons.group(group))
+            Image(nsImage: Icons.group(group, dark: colorScheme == .dark))
                 .resizable()
                 .frame(width: 92, height: 92)
             VStack(alignment: .leading, spacing: 4) {
