@@ -69,24 +69,15 @@ struct FolderpadCommands: Commands {
         }
     }
 
-    /// The standard About panel, filled from the bundle so the version is always the real one,
-    /// and crediting falconsw as the developer.
+    /// The standard About panel, filled from the bundle so the version is always the real one.
     @MainActor private func showAboutPanel() {
         let info = Bundle.main.infoDictionary
         let version = info?["CFBundleShortVersionString"] as? String ?? ""
         let build = info?["CFBundleVersion"] as? String ?? ""
-        let credits = NSAttributedString(
-            string: "Developer: falconsw\ngithub.com/falconsw/folderpad",
-            attributes: [
-                .font: NSFont.systemFont(ofSize: 11),
-                .foregroundColor: NSColor.secondaryLabelColor,
-            ]
-        )
         NSApp.orderFrontStandardAboutPanel(options: [
             .applicationName: "Folderpad",
             .applicationVersion: version,
             .version: build,
-            .credits: credits,
             NSApplication.AboutPanelOptionKey(rawValue: "Copyright"): "© 2026 falconsw",
         ])
         NSApp.activate(ignoringOtherApps: true)
