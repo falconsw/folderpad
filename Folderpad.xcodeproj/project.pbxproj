@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0213F996D4FF177DB5787D6C /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55A8974C8E2E38DCBBC295 /* Components.swift */; };
+		022D228E7227D970E006698F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B6510120FD666CF8F7A32A /* Assets.xcassets */; };
+		075322199F4AAAF38224DD15 /* DockTilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377102AB41BC39FEC9C9B545 /* DockTilesTests.swift */; };
+		08C9D0934210C36400A52F62 /* AllAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CB1350B90D610EE064F8B /* AllAppsView.swift */; };
+		0CDEA83A62633B0B0CDE8DDA /* SuggestionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75654661DDC528640A13DF4 /* SuggestionsTests.swift */; };
+		356B8121D456C1ECC57E7B33 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC7812024E2F053816931F /* Icons.swift */; };
+		37AC6875C22DB8E6874AF9BA /* GroupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD3F5D4F9499E367CB332DC /* GroupStore.swift */; };
+		493CFCEEE950C397CC26E60A /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5035F3007A1413D8F0F858E1 /* GroupDetailView.swift */; };
+		5FA2A6FE195BFABE35FAAF1A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEEDB9E67860463068AE90 /* Models.swift */; };
+		6B873FEE2AC9A81BA4272E5B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FACC102D158AFB1B344A90 /* Preferences.swift */; };
+		7626F79C53BA755EE0CDCE23 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831632AFFF365AEE6ED99677 /* SettingsView.swift */; };
+		90616A343032010528468B33 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1C854131E12C1AF93F6B2 /* Library.swift */; };
+		A323FCA048CEFA996E8B8F9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EBB8BD37A95DD858C128FE /* ContentView.swift */; };
+		C2BDC2502FA017B930207C25 /* DockViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E63A5601C233B55CE88D10F /* DockViews.swift */; };
+		C320314EDE77BF3136C83EA5 /* Suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005411D23C86102DE138AF0A /* Suggestions.swift */; };
+		C90425EDB648B6260F072ADF /* GroupStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A514E57961BF2DFA6F5F9F /* GroupStoreTests.swift */; };
+		D6E74E6A5626646B06827AC7 /* Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E45DFE03B58E1677094F8 /* Sheets.swift */; };
+		E156E5E6E597B0B36516CB58 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B229F19E7713E684974C270 /* Sidebar.swift */; };
+		E7A047847152A7E18DCE2C2F /* Dock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76109C21B74784851B8C3E7A /* Dock.swift */; };
+		E7D5985795097FDE398A1CCA /* FolderpadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CBFF3BBFABF2E623BCF542 /* FolderpadApp.swift */; };
+		EDD86C9ED8504BBF19CA4ACE /* DebugSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6183A80AD750BE30F467C /* DebugSnapshots.swift */; };
+		F2927C99CE1DF84FA4B5FD86 /* AppCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E5F07EABC3AC0F452D802 /* AppCatalog.swift */; };
+		F6D0403FCD2B271A02A6382E /* FolderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A3FCEF13840CD73C5AF94 /* FolderIcon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C242CB064F8DE3A174F80AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2975ED427E3754502C900B55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E21F3B1AACBD945EF5A8565D;
+			remoteInfo = Folderpad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005411D23C86102DE138AF0A /* Suggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestions.swift; sourceTree = "<group>"; };
+		06B6510120FD666CF8F7A32A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CA562F1B49A2A3042B1D990 /* FolderpadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolderpadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F6183A80AD750BE30F467C /* DebugSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSnapshots.swift; sourceTree = "<group>"; };
+		1BDC7812024E2F053816931F /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		329A3FCEF13840CD73C5AF94 /* FolderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderIcon.swift; sourceTree = "<group>"; };
+		377102AB41BC39FEC9C9B545 /* DockTilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockTilesTests.swift; sourceTree = "<group>"; };
+		4B229F19E7713E684974C270 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		4DD3F5D4F9499E367CB332DC /* GroupStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStore.swift; sourceTree = "<group>"; };
+		5035F3007A1413D8F0F858E1 /* GroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailView.swift; sourceTree = "<group>"; };
+		66CBFF3BBFABF2E623BCF542 /* FolderpadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderpadApp.swift; sourceTree = "<group>"; };
+		6E63A5601C233B55CE88D10F /* DockViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockViews.swift; sourceTree = "<group>"; };
+		74FACC102D158AFB1B344A90 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		76109C21B74784851B8C3E7A /* Dock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dock.swift; sourceTree = "<group>"; };
+		766E45DFE03B58E1677094F8 /* Sheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets.swift; sourceTree = "<group>"; };
+		831632AFFF365AEE6ED99677 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A3FFD3E6C7E447C46F33E979 /* Folderpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Folderpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75654661DDC528640A13DF4 /* SuggestionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsTests.swift; sourceTree = "<group>"; };
+		C6CEEDB9E67860463068AE90 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CA5E5F07EABC3AC0F452D802 /* AppCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCatalog.swift; sourceTree = "<group>"; };
+		D6A514E57961BF2DFA6F5F9F /* GroupStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStoreTests.swift; sourceTree = "<group>"; };
+		E24CB1350B90D610EE064F8B /* AllAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAppsView.swift; sourceTree = "<group>"; };
+		EA55A8974C8E2E38DCBBC295 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		F8A1C854131E12C1AF93F6B2 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		F9EBB8BD37A95DD858C128FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		10A1FEF9ADCC7958D9F2010D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FFD3E6C7E447C46F33E979 /* Folderpad.app */,
+				0CA562F1B49A2A3042B1D990 /* FolderpadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D9094CDD08CA1AA26629477 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				87D9A8D059AD358BE0BDB4D1 /* FolderpadTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2880E8129C9E88A834F301D1 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E5F07EABC3AC0F452D802 /* AppCatalog.swift */,
+				76109C21B74784851B8C3E7A /* Dock.swift */,
+				329A3FCEF13840CD73C5AF94 /* FolderIcon.swift */,
+				4DD3F5D4F9499E367CB332DC /* GroupStore.swift */,
+				C6CEEDB9E67860463068AE90 /* Models.swift */,
+				005411D23C86102DE138AF0A /* Suggestions.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		46BE7021D49E697CBDFE1CBF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18F6183A80AD750BE30F467C /* DebugSnapshots.swift */,
+				66CBFF3BBFABF2E623BCF542 /* FolderpadApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5B63A82FCB0011547030CA3B /* Folderpad */ = {
+			isa = PBXGroup;
+			children = (
+				46BE7021D49E697CBDFE1CBF /* App */,
+				2880E8129C9E88A834F301D1 /* Engine */,
+				B81FBE22B0883394D4738C27 /* Models */,
+				92CEFDDC88D2591D4B179535 /* Resources */,
+				A1449707DAADB70A3DC2D3CE /* Support */,
+				EC7CB3C1BD73CE088FFD6053 /* Views */,
+			);
+			path = Folderpad;
+			sourceTree = "<group>";
+		};
+		87D9A8D059AD358BE0BDB4D1 /* FolderpadTests */ = {
+			isa = PBXGroup;
+			children = (
+				377102AB41BC39FEC9C9B545 /* DockTilesTests.swift */,
+				D6A514E57961BF2DFA6F5F9F /* GroupStoreTests.swift */,
+				B75654661DDC528640A13DF4 /* SuggestionsTests.swift */,
+			);
+			path = FolderpadTests;
+			sourceTree = "<group>";
+		};
+		92CEFDDC88D2591D4B179535 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06B6510120FD666CF8F7A32A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1449707DAADB70A3DC2D3CE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1BDC7812024E2F053816931F /* Icons.swift */,
+				74FACC102D158AFB1B344A90 /* Preferences.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B81FBE22B0883394D4738C27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8A1C854131E12C1AF93F6B2 /* Library.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C95779984D929F80A37459A4 = {
+			isa = PBXGroup;
+			children = (
+				5B63A82FCB0011547030CA3B /* Folderpad */,
+				1D9094CDD08CA1AA26629477 /* Tests */,
+				10A1FEF9ADCC7958D9F2010D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC7CB3C1BD73CE088FFD6053 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E24CB1350B90D610EE064F8B /* AllAppsView.swift */,
+				EA55A8974C8E2E38DCBBC295 /* Components.swift */,
+				F9EBB8BD37A95DD858C128FE /* ContentView.swift */,
+				6E63A5601C233B55CE88D10F /* DockViews.swift */,
+				5035F3007A1413D8F0F858E1 /* GroupDetailView.swift */,
+				831632AFFF365AEE6ED99677 /* SettingsView.swift */,
+				766E45DFE03B58E1677094F8 /* Sheets.swift */,
+				4B229F19E7713E684974C270 /* Sidebar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74423A19D94F450BAAF35CAD /* FolderpadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2CAC058E64B033F896AC4B2 /* Build configuration list for PBXNativeTarget "FolderpadTests" */;
+			buildPhases = (
+				F4A20EB5755D80A671CB5789 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DAAA36629A9233116EA2C18 /* PBXTargetDependency */,
+			);
+			name = FolderpadTests;
+			packageProductDependencies = (
+			);
+			productName = FolderpadTests;
+			productReference = 0CA562F1B49A2A3042B1D990 /* FolderpadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E21F3B1AACBD945EF5A8565D /* Folderpad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D162B3128C38AD3FA3B86F71 /* Build configuration list for PBXNativeTarget "Folderpad" */;
+			buildPhases = (
+				DC99BE92FF36BA41B1B195E9 /* Sources */,
+				38A9BCC5BBAAE5C3B316E15B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Folderpad;
+			packageProductDependencies = (
+			);
+			productName = Folderpad;
+			productReference = A3FFD3E6C7E447C46F33E979 /* Folderpad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2975ED427E3754502C900B55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					74423A19D94F450BAAF35CAD = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					E21F3B1AACBD945EF5A8565D = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 26A4D3BEC89D98F61FB445F9 /* Build configuration list for PBXProject "Folderpad" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C95779984D929F80A37459A4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 10A1FEF9ADCC7958D9F2010D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E21F3B1AACBD945EF5A8565D /* Folderpad */,
+				74423A19D94F450BAAF35CAD /* FolderpadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38A9BCC5BBAAE5C3B316E15B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022D228E7227D970E006698F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC99BE92FF36BA41B1B195E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C9D0934210C36400A52F62 /* AllAppsView.swift in Sources */,
+				F2927C99CE1DF84FA4B5FD86 /* AppCatalog.swift in Sources */,
+				0213F996D4FF177DB5787D6C /* Components.swift in Sources */,
+				A323FCA048CEFA996E8B8F9F /* ContentView.swift in Sources */,
+				EDD86C9ED8504BBF19CA4ACE /* DebugSnapshots.swift in Sources */,
+				E7A047847152A7E18DCE2C2F /* Dock.swift in Sources */,
+				C2BDC2502FA017B930207C25 /* DockViews.swift in Sources */,
+				F6D0403FCD2B271A02A6382E /* FolderIcon.swift in Sources */,
+				E7D5985795097FDE398A1CCA /* FolderpadApp.swift in Sources */,
+				493CFCEEE950C397CC26E60A /* GroupDetailView.swift in Sources */,
+				37AC6875C22DB8E6874AF9BA /* GroupStore.swift in Sources */,
+				356B8121D456C1ECC57E7B33 /* Icons.swift in Sources */,
+				90616A343032010528468B33 /* Library.swift in Sources */,
+				5FA2A6FE195BFABE35FAAF1A /* Models.swift in Sources */,
+				6B873FEE2AC9A81BA4272E5B /* Preferences.swift in Sources */,
+				7626F79C53BA755EE0CDCE23 /* SettingsView.swift in Sources */,
+				D6E74E6A5626646B06827AC7 /* Sheets.swift in Sources */,
+				E156E5E6E597B0B36516CB58 /* Sidebar.swift in Sources */,
+				C320314EDE77BF3136C83EA5 /* Suggestions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A20EB5755D80A671CB5789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075322199F4AAAF38224DD15 /* DockTilesTests.swift in Sources */,
+				C90425EDB648B6260F072ADF /* GroupStoreTests.swift in Sources */,
+				0CDEA83A62633B0B0CDE8DDA /* SuggestionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DAAA36629A9233116EA2C18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E21F3B1AACBD945EF5A8565D /* Folderpad */;
+			targetProxy = 2C242CB064F8DE3A174F80AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F25296039B9E52700B7E478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Folderpad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.falconsw.folderpad;
+				PRODUCT_NAME = Folderpad;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		473974B6AF6332A62D67F0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Folderpad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.falconsw.folderpad;
+				PRODUCT_NAME = Folderpad;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		47B060B7AB81D91CFEB8FF96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.falconsw.FolderpadTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Folderpad.app/Contents/MacOS/Folderpad";
+			};
+			name = Debug;
+		};
+		4E69FB87AB3721A560F50E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.falconsw.FolderpadTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Folderpad.app/Contents/MacOS/Folderpad";
+			};
+			name = Release;
+		};
+		C5571AD6916AA8579BB8F35F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		F9BB9666A26587512641D05D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26A4D3BEC89D98F61FB445F9 /* Build configuration list for PBXProject "Folderpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BB9666A26587512641D05D /* Debug */,
+				C5571AD6916AA8579BB8F35F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A2CAC058E64B033F896AC4B2 /* Build configuration list for PBXNativeTarget "FolderpadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B060B7AB81D91CFEB8FF96 /* Debug */,
+				4E69FB87AB3721A560F50E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D162B3128C38AD3FA3B86F71 /* Build configuration list for PBXNativeTarget "Folderpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473974B6AF6332A62D67F0A9 /* Debug */,
+				0F25296039B9E52700B7E478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2975ED427E3754502C900B55 /* Project object */;
+}
