@@ -4,3 +4,6 @@ DerivedData/
 *.xcodeproj/xcuserdata/
 *.xcodeproj/project.xcworkspace/xcuserdata/
 dist/
+
+# Promo video sources and renders
+promo/

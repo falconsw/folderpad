@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot-group.png" width="640" alt="A group in Folderpad">
+  <img src="assets/demo.gif" width="800" alt="Folderpad: a group gets its Launchpad-style icon, then opens as a grid from the Dock">
 </p>
 
 ---
@@ -46,7 +46,9 @@ stay exactly where they are. Open it again whenever you want to change or remove
 - Missing apps are flagged when an alias points at something that was uninstalled.
 
 <p align="center">
-  <img src="assets/screenshot-suggestions.png" width="440" alt="Suggested groups">
+  <img src="assets/screenshot-group.png" width="520" alt="A group in Folderpad">
+  &nbsp;
+  <img src="assets/screenshot-suggestions.png" width="330" alt="Suggested groups">
 </p>
 
 ## How it works
