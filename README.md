@@ -10,6 +10,10 @@
 </p>
 
 <p align="center">
+  <a href="https://skillhane.vercel.app/video/macos-26-launchpad-klasorleri-geri-getirme">Watch the short video and read the walkthrough (Turkish) on SkillHane</a>
+</p>
+
+<p align="center">
   <img src="assets/demo.gif" width="800" alt="Folderpad: a group gets its Launchpad-style icon, then opens as a grid from the Dock">
 </p>
 
